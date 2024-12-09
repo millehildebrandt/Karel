@@ -1,0 +1,29 @@
+void solveTheMaze()
+{
+    
+    while (frontIsClear())
+    {
+        moveForward();
+    }
+    repeat (40)
+    {
+        if (!frontIsClear())
+        {
+            turnRight();
+            moveForward();
+            turnLeft();
+            
+        }
+        else 
+        {
+            turnLeft();
+        }
+        
+        
+        
+        
+        
+    }
+    
+    
+}
