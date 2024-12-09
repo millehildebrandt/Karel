@@ -1,0 +1,22 @@
+void quantizeBits()
+{
+    turnLeft();
+    while (beeperAhead())
+    {
+        moveForward();
+        
+        repeat (2){
+            
+            if (!beeperAhead())
+            {
+                moveForward();
+                dropBeeper();
+            }
+            while (!frontIsClear())
+            {
+                turnAround();
+                moveForward();
+            }   
+        }     
+    }  
+} 
