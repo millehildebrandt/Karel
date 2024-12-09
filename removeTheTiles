@@ -1,0 +1,19 @@
+void removeTheTiles()
+{
+    repeat (10)
+    {
+        turn();
+        
+    }
+}
+void turn()
+{
+    if (beeperAhead()
+    )
+    {
+        pickBeeper();
+        moveForward();
+        
+    }
+    
+}
